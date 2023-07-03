@@ -1,6 +1,9 @@
-# jmfantin
+## www.jmfant.in
+
 `MADE WITH 🧡 FOR MY 3F`
+
 ### objectives:
+
 <details>
   <summary>✅ VITE + VERCEL DEPLOY</summary>
   ⚡️ https://vitejs.dev/<br/>
