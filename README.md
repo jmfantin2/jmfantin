@@ -26,8 +26,14 @@
 </details>
 
 <details>
-  <summary>💭 DASHBOARD UI</summary>
+  <summary>💭 DASHBOARD UI + PAGES</summary>
 </details>
+
+---
+
+boilerplate checkpoint: {fork}
+
+---
 
 <details>
   <summary>💭 REACT TAILWIND RESPONSIVE</summary>
