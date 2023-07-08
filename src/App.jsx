@@ -12,6 +12,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { ref, uploadBytes } from "firebase/storage";
+import { FlameLoader } from "./components/FlameLoader";
 
 function App() {
   const [movieList, setMovieList] = useState([]);
@@ -87,6 +88,7 @@ function App() {
 
   return (
     <div className="App">
+      <FlameLoader />
       <Auth />
       <div>
         <input
