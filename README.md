@@ -1,58 +1,34 @@
-## www.jmfant.in
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-`MADE WITH 🧡 FOR MY 3F`
+## Getting Started
 
-### objectives:
+First, run the development server:
 
-<details>
-  <summary>✅ VITE + VERCEL DEPLOY</summary>
-  ⚡️ https://vitejs.dev/<br/>
-  🔺 https://vercel.com/
-</details>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-<details>
-  <summary>✅ FIREBASE BACKEND CALLS</summary>
-  🔥 https://firebase.google.com/<br/>
-  📼 start here: https://www.youtube.com/watch?v=2hR-uWjBAgw&t=186s
-</details>
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<details>
-  <summary>💭 THEME & LANGUAGE TOGGLE</summary>
-  
-  ```js
-  1. use React Hooks providers
-  2. update global styles dynamically
-  ```
-</details>
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-<details>
-  <summary>💭 DASHBOARD UI + PAGES</summary>
-</details>
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
----
+## Learn More
 
-boilerplate checkpoint: {fork}
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-<details>
-  <summary>💭 REACT TAILWIND RESPONSIVE</summary>
-</details>
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-<details>
-  <summary>💭 USER INPUT</summary>
-</details>
+## Deploy on Vercel
 
-<details>
-  <summary>💭 API LAB</summary>
-</details>
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-<details>
-  <summary>💭 CLOUD TRANSLATION</summary>
-  💬 https://console.cloud.google.com/apis/library/translate.googleapis.com?pli=1&project=poclogin-calc
-</details>
-
-<details>
-  <summary>💭 SPRING BACKEND CALLS</summary>
-  🍃 https://docs.spring.io/spring-framework/reference/
-</details>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
