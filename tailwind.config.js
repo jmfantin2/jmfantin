@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         PAPER: "#ece7e4",
-        COAL: "#262626",
+        IRON: "#262a2d",
         EMERALD: "#10B981",
         CYAN: "#06B6D4",
         ORANGE: "#f9622b",
