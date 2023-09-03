@@ -61,10 +61,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="leading-none text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-burtons text-4xl py-2  font-medium  md:text-6xl">
+            <h2 className="leading-none text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-burtons text-4xl py-2  font-medium  md:text-5xl">
               JOAO MARCELO
               <br />
-              <p className="text-5xl">fantin lerina</p>
+              <p className="text-5xl md:text-6xl">fantin lerina</p>
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Engenheiro de Software
@@ -73,12 +73,12 @@ export default function Home() {
               Melhoro teus processos sem exageros
               <br />e com uma pá de criatividade.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <div className="text-5xl flex justify-center gap-16 py-3 text-ROSE dark:text-cyan-600">
               <AiFillTwitterCircle />
               <AiFillLinkedin />
               <AiFillYoutube />
             </div>
-            <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent to-ROSE dark:from-transparent dark:to-EMERALD w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent to-ROSE dark:from-transparent dark:to-cyan-700 w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image alt="" src={wow} layout="fill" objectFit="cover" />
             </div>
           </div>
