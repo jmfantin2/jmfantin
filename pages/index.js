@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill, BsTranslate } from "react-icons/bs";
 import { useState } from "react";
-import wow from "../public/maybe.png";
+import alchemist from "../public/alchemist.png";
 import Image from "next/image";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
@@ -101,7 +101,7 @@ export default function Home() {
               <AiFillYoutube />
             </div>
             <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent to-ROSE dark:from-transparent dark:to-cyan-700 w-48 h-48 relative overflow-hidden md:h-96 md:w-96">
-              <Image alt="" src={wow} layout="fill" objectFit="cover" />
+              <Image alt="" src={alchemist} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -135,14 +135,14 @@ export default function Home() {
             <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10  dark:bg-white flex-1">
               <FrameworkIcon level="murro" />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                <mark className="px-2 py-1 bg-ROSE dark:bg-CYAN text-white">
+                <mark className="px-2 py-1 bg-gradient-to-br from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
                   MURRO
                 </mark>
               </h3>
-              <p className="pt-2 border-b-2 border-ROSE dark:border-CYAN">
+              <p className="pt-2 border-b-2 border-ORANGE dark:border-EMERALD">
                 Onde "resolver no soco" é o certo.
               </p>
-              <h4 className="py-4 font-semibold text-ROSE dark:text-CYAN">
+              <h4 className="text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN py-4 font-semibold">
                 zero código + foco em processo
               </h4>
               <p className="text-IRON font-medium font-mono">
@@ -156,14 +156,14 @@ export default function Home() {
             <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10 dark:bg-white flex-1">
               <FrameworkIcon level="martelo" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
-                <mark className="px-2 py-1 bg-ROSE dark:bg-CYAN text-white">
+                <mark className="px-2 py-1 bg-gradient-to-bl from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
                   MARTELO
                 </mark>
               </h3>
-              <p className="pt-2 border-b-2 border-ROSE dark:border-CYAN">
+              <p className="pt-2 border-b-2 border-ORANGE dark:border-EMERALD">
                 Pendurar uns quadros faz bem.
               </p>
-              <h4 className="py-4 font-semibold text-ROSE dark:text-CYAN">
+              <h4 className="text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN py-4 font-semibold">
                 site próprio + identidade visual
               </h4>
               <p className="text-IRON font-medium font-mono">
@@ -177,14 +177,14 @@ export default function Home() {
             <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10 dark:bg-white flex-1">
               <FrameworkIcon level="marreta" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
-                <mark className="px-2 py-1 bg-ROSE dark:bg-CYAN text-white">
+                <mark className="px-2 py-1 bg-gradient-to-tr from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
                   MARRETA
                 </mark>
               </h3>
-              <p className="pt-2 border-b-2 border-ROSE dark:border-CYAN">
+              <p className="pt-2 border-b-2 border-ORANGE dark:border-EMERALD">
                 Acima disso, é pren$a hidráulica.
               </p>
-              <h4 className="py-4 font-semibold text-ROSE dark:text-CYAN">
+              <h4 className="text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN py-4 font-semibold">
                 plataforma + fluxo de dados
               </h4>
               <p className="text-IRON font-medium font-mono">
