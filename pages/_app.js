@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import { FlameLoader } from "../components/FlameLoader";
+import { LangContextProvider } from "../contexts/LangContext";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -17,9 +18,9 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <>
+    <LangContextProvider>
       {loading ? <FlameLoader mode="fullpage" /> : <Component {...pageProps} />}
-    </>
+    </LangContextProvider>
   );
 }
 

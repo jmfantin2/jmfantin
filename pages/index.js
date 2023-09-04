@@ -18,6 +18,8 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { FrameworkIcon } from "../components/FrameworkIcon";
 
+import TXT from "../lib/strings/constants";
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -53,7 +55,7 @@ export default function Home() {
                   className="font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out ml-8"
                   href="#"
                 >
-                  taca fogo
+                  {TXT("DARE")}
                 </a>
               </li>
             </ul>
@@ -93,7 +95,7 @@ export default function Home() {
             <p className="text-md py-5 leading-tight text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Te acompanho nos apertos dessa TI
               <br />
-              que parece loucura ao ver de fora.
+              que parece loucura ao se ver de fora.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 mb-10 md:mb-28 text-ROSE dark:text-cyan-600">
               <AiFillTwitterCircle />
