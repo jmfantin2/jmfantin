@@ -44,17 +44,17 @@ export default function Home() {
             </h1>
             <ul className="flex items-center">
               <li>
-                <BsTranslate className="text-ROSE dark:text-CYAN cursor-pointer text-2xl" />
+                <BsTranslate className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out" />
               </li>
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl ml-8"
+                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out ml-8"
                 />
               </li>
               <li>
                 <a
-                  className="font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white px-4 py-1 border-none rounded-md ml-8"
+                  className="font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out ml-8"
                   href="#"
                 >
                   taca fogo

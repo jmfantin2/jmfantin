@@ -5,7 +5,7 @@ export function FlameLoader(props) {
   switch (props.mode) {
     case "fullpage":
       return (
-        <div className="oxygen bg-white h-[100vh] w-full justify-center items-center pb-20">
+        <div className="oxygen bg-PAPER h-[100vh] w-full justify-center items-center pb-20">
           <div className="fire">
             <div className="flames">
               <div className="flame"></div>
