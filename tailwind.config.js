@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         PAPER: "#ece7e4",
         IRON: "#262a2d",
+        INDUSTRY: "#637465",
         EMERALD: "#10B981",
         CYAN: "#06B6D4",
         ORANGE: "#f9622b",
