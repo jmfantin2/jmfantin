@@ -123,10 +123,13 @@ export default function Home() {
               <span className="text-ROSE dark:text-CYAN font-bold">
                 não se mata formiga com revólver
               </span>
-              . Com quase uma década de TI, comprovei na prática que a virtude
-              maior da engenharia é deixar o cliente satisfeito com a menor
-              quantidade de recursos possível. Para isso, dividi minhas
-              especialidades em{" "}
+              . Com quase uma década de{" "}
+              <span className="text-ROSE dark:text-CYAN font-bold">
+                experimentalismo
+              </span>{" "}
+              na TI, comprovei na prática que a virtude maior da engenharia é
+              deixar o cliente satisfeito com a menor quantidade de recursos
+              possível. Para isso, dividi minhas especialidades em{" "}
               <span className="text-ROSE dark:text-CYAN font-bold">
                 três níveis incrementais
               </span>
