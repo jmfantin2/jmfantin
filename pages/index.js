@@ -20,6 +20,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import { FlameLoader } from "../components/FlameLoader";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -71,21 +72,22 @@ export default function Home() {
               <br />
               <p className="text-5xl md:text-6xl">fantin lerina</p>
             </h2>
+            {/*<FlameLoader mode="fullpage" />*/}
             <h3 className=" py-2 text-ROSE dark:text-CYAN sm:text-xl md:text-3xl opacity-80">
               <TypeAnimation
                 className="inline-block"
                 sequence={[
-                  "_engenheiro de software",
-                  1000,
-                  "_designer gráfico",
-                  1000,
-                  '_"sobrinho LTDA"',
+                  "engenheiro de software",
+                  1500,
+                  "designer gráfico",
+                  1500,
+                  '"sobrinho de aluguel"',
                   2000,
-                  "_goleiro aposentado",
+                  "goleiro aposentado",
                   2000,
                 ]}
                 wrapper="span"
-                speed={40}
+                speed={50}
                 repeat={Infinity}
               />
             </h3>
