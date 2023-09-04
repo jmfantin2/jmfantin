@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import shapeshifter from "classnames";
 import { TypeAnimation } from "react-type-animation";
 import Head from "next/head";
 import {
@@ -17,11 +18,13 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { FrameworkIcon } from "../components/FrameworkIcon";
+import { useLang } from "../contexts/LangContext";
 
 import TXT from "../lib/strings/constants";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const { lang, toggleLang } = useLang();
 
   return (
     <div className={darkMode ? "dark select-none" : "select-none"}>
@@ -42,7 +45,10 @@ export default function Home() {
             </h1>
             <ul className="flex items-center">
               <li>
-                <BsTranslate className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out" />
+                <BsTranslate
+                  onClick={toggleLang}
+                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out"
+                />
               </li>
               <li>
                 <BsFillMoonStarsFill
@@ -70,27 +76,59 @@ export default function Home() {
               <br />
               <p className="text-5xl md:text-6xl">fantin lerina</p>
             </h2>
-            <h3 className=" py-2 font-medium text-rose-600 dark:text-cyan-400 text-lg md:text-2xl opacity-80">
-              <TypeAnimation
-                className="inline-block"
-                sequence={[
-                  "💾 engenheiro de software",
-                  2000,
-                  "🖼 artista digital",
-                  2000,
-                  "🥚 essencialista",
-                  2000,
-                  "🤡 startupeiro revolts",
-                  2000,
-                  "🖨 tele-sobrinho",
-                  2000,
-                  "🦴 goleiro aposentado",
-                  2000,
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-              />
+            <h3 className="py-2 font-medium text-rose-600 dark:text-cyan-400 text-lg md:text-2xl opacity-80">
+              <div
+                className={shapeshifter("inline-block", {
+                  "hidden": lang.iso !== "PT",
+                })}
+              >
+                <TypeAnimation
+                  className="inline-block"
+                  sequence={[
+                    "💾 engenheiro de software ",
+                    2000,
+                    "🖼 artista digital ",
+                    2000,
+                    "🥚 essencialista ",
+                    2000,
+                    "🤡 startupeiro revolts ",
+                    2000,
+                    "🖨 tele-sobrinho ",
+                    2000,
+                    "🦴 goleiro aposentado ",
+                    2000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                />
+              </div>
+              <div
+                className={shapeshifter("inline-block", {
+                  "hidden": lang.iso !== "EN",
+                })}
+              >
+                <TypeAnimation
+                  className="inline-block "
+                  sequence={[
+                    "💾 software engineer ",
+                    2000,
+                    "🖼 digital artist ",
+                    2000,
+                    "🥚 essentialist ",
+                    2000,
+                    "🤡 cynical founder ",
+                    2000,
+                    "🖨 0800-NEPHEW ",
+                    2000,
+                    "🦴 retired goalkeeper ",
+                    2000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                />
+              </div>
             </h3>
             <p className="text-md py-5 leading-tight text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Te acompanho nos apertos dessa TI
