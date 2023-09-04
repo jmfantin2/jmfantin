@@ -119,7 +119,7 @@ export default function Home() {
                     2000,
                     '🤡 cynical founder ',
                     2000,
-                    '🖨 0800-NEPHEW ',
+                    '🖨 1-800-NEPHEW ',
                     2000,
                     '🦴 retired goalkeeper ',
                     2000,
