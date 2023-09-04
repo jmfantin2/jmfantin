@@ -1,3 +1,4 @@
+import { TypeAnimation } from "react-type-animation";
 import Head from "next/head";
 import {
   AiFillTwitterCircle,
@@ -62,12 +63,31 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="leading-none text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-burtons text-4xl py-2  font-medium  md:text-5xl">
-              JOAO MARCELO
+              JO
+              <span className="border-t-4 border-ORANGE dark:border-EMERALD">
+                A
+              </span>
+              O MARCELO
               <br />
               <p className="text-5xl md:text-6xl">fantin lerina</p>
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Engenheiro de Software
+            <h3 className=" py-2 text-ROSE dark:text-CYAN sm:text-xl md:text-3xl opacity-80">
+              <TypeAnimation
+                className="inline-block"
+                sequence={[
+                  "_engenheiro de software",
+                  1000,
+                  "_designer gráfico",
+                  1000,
+                  '_"sobrinho LTDA"',
+                  2000,
+                  "_goleiro aposentado",
+                  2000,
+                ]}
+                wrapper="span"
+                speed={40}
+                repeat={Infinity}
+              />
             </h3>
             <p className="text-md py-5 leading-tight text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Melhoro teus processos sem exageros
