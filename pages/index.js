@@ -7,7 +7,9 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
 } from 'react-icons/ai';
-import { BsFillMoonStarsFill, BsTranslate } from 'react-icons/bs';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { LiaFlagUsaSolid } from 'react-icons/lia';
+import { GiBrazilFlag } from 'react-icons/gi';
 import { useState } from 'react';
 import alchemist from '../public/alchemist.png';
 import Image from 'next/image';
@@ -35,7 +37,7 @@ export default function Home() {
       </Head>
       <main className=" bg-PAPER px-4 dark:bg-IRON md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between items-center dark:text-white">
+          <nav className="py-4 md:py-10 mb-12 flex justify-between items-center dark:text-white">
             <h1 className="font-burtons pt-2 text-2xl">
               JMFANT
               <span className="mr-1 text-lg text-ORANGE dark:text-EMERALD">
@@ -45,20 +47,27 @@ export default function Home() {
             </h1>
             <ul className="flex items-center">
               <li>
-                <BsTranslate
-                  onClick={toggleLang}
-                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out"
-                />
+                {lang.iso === 'PT' ? (
+                  <GiBrazilFlag
+                    onClick={toggleLang}
+                    className="bg-gradient-to-r from-IRON text-white to-IRON dark:from-white dark:text-IRON dark:to-white hover:from-EMERALD hover:text-amber-300 hover:to-sky-600 hover:dark:from-EMERALD hover:dark:text-amber-300 hover:dark:to-sky-600  px-1 max-h-8 rounded-md cursor-pointer text-4xl transition-colors ease-in-out"
+                  />
+                ) : (
+                  <LiaFlagUsaSolid
+                    onClick={toggleLang}
+                    className="text-ROSE dark:text-CYAN cursor-pointer text-4xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out"
+                  />
+                )}
               </li>
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out ml-8"
+                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out ml-4 md:ml-8"
                 />
               </li>
               <li>
                 <a
-                  className="font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out ml-8"
+                  className="font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out ml-4 md:ml-8"
                   href="#"
                 >
                   {TXT('DARE')}
@@ -154,7 +163,14 @@ export default function Home() {
               </mark>
             </h3>
             <p className="text-md py-2 leading-tight text-gray-800 dark:text-gray-200">
-              Aspas. Sigo pagando por fita crepe!
+              Aspas. Sigo pagando por fita crepe!{' '}
+              <span
+                className={shapeshifter('text-ROSE dark:text-CYAN font-bold', {
+                  'hidden': lang.iso !== 'EN',
+                })}
+              >
+                Initials are lost in translation though. ¯\_(ツ)_/¯
+              </span>
             </p>
             <p className="text-md py-2 leading-tight text-gray-800 dark:text-gray-200">
               Como bom acadêmico, ouvi exaustivamente que{' '}
