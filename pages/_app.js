@@ -1,5 +1,3 @@
-//GPT ATTEMPT
-
 import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import { FlameLoader } from "../components/FlameLoader";
