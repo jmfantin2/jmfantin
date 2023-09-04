@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+import { TypeAnimation } from "react-type-animation";
 import Head from "next/head";
 import {
   AiFillTwitterCircle,
@@ -6,8 +8,6 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill, BsTranslate } from "react-icons/bs";
 import { useState } from "react";
-import deved from "../public/dev-ed-wave.png";
-import tam from "../public/teste.png";
 import wow from "../public/maybe.png";
 import code from "../public/code.png";
 import design from "../public/design.png";
@@ -19,6 +19,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import { FrameworkIcon } from "../components/FrameworkIcon";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -42,17 +43,17 @@ export default function Home() {
             </h1>
             <ul className="flex items-center">
               <li>
-                <BsTranslate className="text-ROSE dark:text-CYAN cursor-pointer text-2xl" />
+                <BsTranslate className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out" />
               </li>
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl ml-8"
+                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out ml-8"
                 />
               </li>
               <li>
                 <a
-                  className="font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white px-4 py-1 border-none rounded-md ml-8"
+                  className="font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out ml-8"
                   href="#"
                 >
                   taca fogo
@@ -62,12 +63,34 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="leading-none text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-burtons text-4xl py-2  font-medium  md:text-5xl">
-              JOAO MARCELO
+              JO
+              <span className="border-t-4 border-ORANGE dark:border-EMERALD">
+                A
+              </span>
+              O MARCELO
               <br />
               <p className="text-5xl md:text-6xl">fantin lerina</p>
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Engenheiro de Software
+            {/*<FlameLoader mode="fullpage" />*/}
+            <h3 className=" py-2 text-ROSE dark:text-CYAN sm:text-xl md:text-3xl opacity-80">
+              <TypeAnimation
+                className="inline-block"
+                sequence={[
+                  "engenheiro de software",
+                  1500,
+                  "designer gráfico",
+                  1500,
+                  "essencialista",
+                  1500,
+                  '"sobrinho de aluguel"',
+                  2000,
+                  "goleiro aposentado",
+                  2000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
             </h3>
             <p className="text-md py-5 leading-tight text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Melhoro teus processos sem exageros
@@ -85,29 +108,42 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, Ive done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+            <h3 className="text-3xl py-1 dark:text-white ">
+              A metodologia{" "}
+              <mark className="px-2 bg-rose-400 dark:bg-cyan-600 dark:text-white">
+                "3M"
+              </mark>
+            </h3>
+            <p className="text-md py-2 leading-tight text-gray-800 dark:text-gray-200">
+              Aspas monumentais aí, pois sempre paguei pela minha fita crepe!
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            <p className="text-md py-2 leading-tight text-gray-800 dark:text-gray-200">
+              Como bom acadêmico, ouvi exaustivamente que{" "}
+              <span className="text-ROSE dark:text-CYAN font-bold">
+                não se mata formiga com revólver
+              </span>
+              . Perto da primeira década de carreira, comprovei na prática que a
+              virtude maior da engenharia é resolver os problemas com a menor
+              quantidade de recursos possível. Para isso, dividi minhas
+              especialidades em{" "}
+              <span className="text-ROSE dark:text-CYAN font-bold">
+                três níveis incrementais
+              </span>
+              :
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image alt="" src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
+            <div className="flex flex-col items-center text-center  shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <FrameworkIcon level="murro" />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                <mark className="px-2 py-1 bg-ROSE dark:bg-CYAN text-white">
+                  MURRO
+                </mark>
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                Esse é o único lugar onde "resolver no soco" é o certo. É daqui
+                que a gente parte, e enquanto não houver necessidade, não se
+                toca na caixa de ferramentas.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
@@ -115,24 +151,30 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image alt="" src={code} width={100} height={100} />
+            <div className="flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <FrameworkIcon level="martelo" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
+                <mark className="px-2 py-1 bg-ROSE dark:bg-CYAN text-white">
+                  MARTELO
+                </mark>
               </h3>
               <p className="py-2">
                 Do you have an idea for your next great website? Lets make it a
                 reality.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <p className="text-gray-800 py-1">Frontend puro</p>
+              <p className="text-gray-800 py-1">Glide</p>
+              <p className="text-gray-800 py-1">Notion</p>
+              <p className="text-gray-800 py-1">Bitly</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image alt="" src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+            <div className="flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <FrameworkIcon level="marreta" />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                <mark className="px-2 py-1 bg-ROSE dark:bg-CYAN text-white">
+                  MARRETA
+                </mark>
+              </h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
