@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { FlameLoader } from '../components/FlameLoader';
 import { LangContextProvider } from '../contexts/LangContext';
 import { ThemeContextProvider } from '../contexts/ThemeContext';
+import { ModalProvider } from 'react-modal-hook';
+import { Toaster } from 'react-hot-toast';
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -11,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     // Simulate a delay for demonstration purposes
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Adjust the delay as needed
+    }, 2718); // Adjust the delay as needed
 
     return () => {
       clearTimeout(timeout);
@@ -24,7 +26,20 @@ function MyApp({ Component, pageProps }) {
         {loading ? (
           <FlameLoader mode="fullpage" />
         ) : (
-          <Component {...pageProps} />
+          <>
+            <Toaster
+              position="top-center"
+              toastOptions={{
+                duration: 5000,
+                style: {
+                  fontWeight: 'bold',
+                },
+              }}
+            />
+            <ModalProvider>
+              <Component {...pageProps} />
+            </ModalProvider>
+          </>
         )}
       </LangContextProvider>
     </ThemeContextProvider>

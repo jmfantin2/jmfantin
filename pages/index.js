@@ -17,6 +17,7 @@ import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
 import { FrameworkIcon } from '../components/FrameworkIcon';
 import { Navigator } from '../components/Navigator';
+import { Bored } from '../components/Bored';
 import { useLang } from '../contexts/LangContext';
 import { useTheme } from '../contexts/ThemeContext';
 
@@ -37,7 +38,7 @@ export default function Home() {
       </Head>
       <main className=" bg-PAPER px-4 dark:bg-IRON md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <Navigator />
+          <Navigator /> <Bored />
           <div className="text-center p-10 py-10">
             <h2 className="leading-none text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-burtons text-4xl py-2 font-medium  md:text-5xl">
               JO
