@@ -7,8 +7,9 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
 } from 'react-icons/ai';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsFillSunFill, BsFillMoonStarsFill } from 'react-icons/bs';
 import { LiaFlagUsaSolid } from 'react-icons/lia';
+import { FaSun } from 'react-icons/fa';
 import { GiBrazilFlag } from 'react-icons/gi';
 import { useState } from 'react';
 import alchemist from '../public/alchemist.png';
@@ -60,10 +61,17 @@ export default function Home() {
                 )}
               </li>
               <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="text-ROSE dark:text-CYAN cursor-pointer text-2xl hover:text-ORANGE dark:hover:text-EMERALD transition-colors ease-in-out ml-4 md:ml-8"
-                />
+                {darkMode ? (
+                  <BsFillMoonStarsFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="text-CYAN cursor-pointer text-2xl hover:text-EMERALD transition-colors ease-in-out ml-4 md:ml-8"
+                  />
+                ) : (
+                  <FaSun
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="text-ROSE cursor-pointer text-3xl hover:text-ORANGE transition-colors ease-in-out ml-4 md:ml-8"
+                  />
+                )}
               </li>
               <li>
                 <a
@@ -140,16 +148,14 @@ export default function Home() {
               </div>
             </h3>
             <p className="text-md py-5 leading-tight text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Te acompanho nos apertos dessa TI
-              <br />
-              que parece loucura ao se ver de fora.
+              {TXT('INTRO')}
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 mb-10 md:mb-28 text-ROSE dark:text-cyan-600">
               <AiFillTwitterCircle />
               <AiFillLinkedin />
               <AiFillYoutube />
             </div>
-            <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent to-ROSE dark:from-transparent dark:to-cyan-700 w-48 h-48 relative overflow-hidden md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent to-ROSE dark:from-transparent dark:to-cyan-700 w-48 h-48 relative overflow-y-hidden md:h-96 md:w-96">
               <Image alt="" src={alchemist} layout="fill" objectFit="cover" />
             </div>
           </div>
@@ -157,35 +163,27 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1 mt-10 dark:text-white ">
-              A metodologia{' '}
+              {TXT('THREE_M_P1') + ' '}
               <mark className="px-2 bg-rose-400 dark:bg-cyan-600 dark:text-white">
                 "3M"
               </mark>
+              {lang.iso === 'EN' ? ' methodology.' : null}
             </h3>
             <p className="text-md py-2 leading-tight text-gray-800 dark:text-gray-200">
-              Aspas. Sigo pagando por fita crepe!{' '}
-              <span
-                className={shapeshifter('text-ROSE dark:text-CYAN font-bold', {
-                  'hidden': lang.iso !== 'EN',
-                })}
-              >
-                Initials are lost in translation though. ¯\_(ツ)_/¯
-              </span>
+              {TXT('JOKE') + ' '}
             </p>
             <p className="text-md py-2 leading-tight text-gray-800 dark:text-gray-200">
-              Como bom acadêmico, ouvi exaustivamente que{' '}
+              {TXT('ACADEMIC_BEG')}
               <span className="text-ROSE dark:text-CYAN font-bold">
-                não se mata formiga com revólver
+                {TXT('KILLING_ANTS')}
               </span>
-              . Com quase uma década de{' '}
+              {TXT('ALMOST_A_DECADE')}
               <span className="text-ROSE dark:text-CYAN font-bold">
-                experimentalismo
-              </span>{' '}
-              na TI, comprovei na prática que a virtude maior da engenharia é
-              deixar o cliente satisfeito com a menor quantidade de recursos
-              possível. Para isso, dividi minhas especialidades em{' '}
+                {TXT('EXPERIMENTALISM')}
+              </span>
+              {TXT('ACADEMIC_END')}
               <span className="text-ROSE dark:text-CYAN font-bold">
-                três níveis incrementais
+                {TXT('THREE_INCREMENTAL_LEVELS')}
               </span>
               :
             </p>
@@ -195,14 +193,14 @@ export default function Home() {
               <FrameworkIcon level="murro" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 <mark className="px-2 py-1 bg-gradient-to-br from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
-                  MURRO
+                  {TXT('MURRO')}
                 </mark>
               </h3>
               <p className="pt-2 border-b-2 border-ORANGE dark:border-EMERALD">
-                Onde "resolver no soco" é o certo.
+                {TXT('MURRO_JOKE')}
               </p>
               <h4 className="text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN py-4 font-semibold">
-                zero código + foco em processo
+                {TXT('MURRO_HINT')}
               </h4>
               <p className="text-IRON font-medium font-mono">
                 Glide
@@ -216,14 +214,14 @@ export default function Home() {
               <FrameworkIcon level="martelo" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 <mark className="px-2 py-1 bg-gradient-to-bl from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
-                  MARTELO
+                  {TXT('MARTELO')}
                 </mark>
               </h3>
               <p className="pt-2 border-b-2 border-ORANGE dark:border-EMERALD">
-                Pendurar uns quadros faz bem.
+                {TXT('MARTELO_JOKE')}
               </p>
               <h4 className="text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN py-4 font-semibold">
-                site próprio + identidade visual
+                {TXT('MARTELO_HINT')}
               </h4>
               <p className="text-IRON font-medium font-mono">
                 React
@@ -237,23 +235,31 @@ export default function Home() {
               <FrameworkIcon level="marreta" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 <mark className="px-2 py-1 bg-gradient-to-tr from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
-                  MARRETA
+                  {TXT('MARRETA')}
                 </mark>
               </h3>
               <p className="pt-2 border-b-2 border-ORANGE dark:border-EMERALD">
-                Acima disso, é pren$a hidráulica.
+                {TXT('MARRETA_JOKE')}
               </p>
               <h4 className="text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN py-4 font-semibold">
-                plataforma + fluxo de dados
+                {TXT('MARRETA_HINT')}
               </h4>
               <p className="text-IRON font-medium font-mono">
-                as anteriores +<br />
+                {lang.iso === 'PT' ? 'as anteriores ' : 'the former '}+<br />
                 Flutterflow
                 <br />
                 AWS
               </p>
             </div>
           </div>
+
+          <p
+            className={shapeshifter('text-ROSE dark:text-CYAN', {
+              'hidden': lang.iso !== 'EN',
+            })}
+          >
+            Initials are lost in translation though. ¯\_(ツ)_/¯
+          </p>
         </section>
         <section className="py-10">
           <div>
