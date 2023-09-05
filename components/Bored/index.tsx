@@ -64,6 +64,15 @@ export function Bored() {
       >
         {TXT('DARE') /*TEDIO*/}
       </a>
+      <a
+        className={shapeshifter(
+          'fixed z-10 bottom-4 right-4 cursor-pointer font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out',
+          { 'hidden': lang.iso !== 'PT' || !flagModal }
+        )}
+        onClick={showModal}
+      >
+        whats
+      </a>
     </>
   );
 }
