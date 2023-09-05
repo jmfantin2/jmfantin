@@ -21,21 +21,21 @@ export function Bored() {
         isOpen
         className="flex flex-col h-screen w-screen items-center text-center justify-center"
       >
-        <mark className="text-white bg-gradient-to-br from-ORANGE to-ROSE font-mono leading-tight mb-4 px-4">
+        <mark className="text-white bg-gradient-to-br from-EMERALD to-green-500 font-mono font-semibold leading-tight mb-4 px-4">
           (51) 994 321 079
         </mark>
-        <div className="border-4 border-ROSE dark:border-CYAN bg-WHATSAPP w-[200px] h-[200px] bg-cover" />
+        <div className="border-4 border-green-500 bg-WHATSAPP w-[200px] h-[200px] bg-cover" />
 
-        <mark className="text-white bg-gradient-to-bl from-ROSE to-ORANGE font-mono leading-tight mt-4 px-4">
+        <mark className="text-white bg-gradient-to-bl from-green-500 to-EMERALD font-mono leading-tight mt-4 px-4">
           tenho certeza que tuas dúvidas
           <br />
           são mais úteis que as minhas.
         </mark>
-        <mark className="text-white bg-gradient-to-br from-ORANGE to-ROSE font-mono leading-tight mt-4 px-4">
+        <mark className="text-white bg-gradient-to-br from-EMERALD to-green-500 font-mono leading-tight mt-4 px-4">
           me manda um whats dizendo que viu isso!
         </mark>
-        <mark className="text-white bg-gradient-to-bl from-ROSE to-ORANGE font-mono leading-tight mt-4 px-4">
-          me deixaria empolgado, de verdade.
+        <mark className="text-white bg-gradient-to-bl from-green-500 to-EMERALD font-mono leading-tight mt-4 px-4">
+          me deixaria faceiro, de verdade :)
         </mark>
       </ReactModal>
     </div>
@@ -45,7 +45,7 @@ export function Bored() {
     <>
       <a
         className={shapeshifter(
-          'fixed z-10 bottom-4 right-4 cursor-pointer font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out',
+          'fixed z-10 bottom-4 right-4 cursor-pointer font-burtons text-lg bg-gradient-to-r from-green-500 to-EMERALD dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out',
           { 'hidden': lang.iso !== 'PT' || flagModal }
         )}
         onClick={async () => {
@@ -66,7 +66,7 @@ export function Bored() {
       </a>
       <a
         className={shapeshifter(
-          'fixed z-10 bottom-4 right-4 cursor-pointer font-burtons text-lg bg-gradient-to-r from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out',
+          'fixed z-10 bottom-4 right-4 cursor-pointer font-burtons text-lg bg-gradient-to-r from-green-500 to-EMERALD dark:from-CYAN dark:to-EMERALD hover:bg-gradient-to-b text-white px-4 py-1 border-none rounded-md transition-colors ease-in-out',
           { 'hidden': lang.iso !== 'PT' || !flagModal }
         )}
         onClick={showModal}

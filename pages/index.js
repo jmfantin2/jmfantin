@@ -2,22 +2,13 @@
 import shapeshifter from 'classnames';
 import { TypeAnimation } from 'react-type-animation';
 import Head from 'next/head';
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import alchemist from '../public/alchemist.png';
 import Image from 'next/image';
-import web1 from '../public/web1.png';
-import web2 from '../public/web2.png';
-import web3 from '../public/web3.png';
-import web4 from '../public/web4.png';
-import web5 from '../public/web5.png';
-import web6 from '../public/web6.png';
 import { FrameworkIcon } from '../components/FrameworkIcon';
 import { Navigator } from '../components/Navigator';
 import { Bored } from '../components/Bored';
+import { ProjectCard } from '../components/ProjectCard';
 import { useLang } from '../contexts/LangContext';
 import { useTheme } from '../contexts/ThemeContext';
 
@@ -107,9 +98,20 @@ export default function Home() {
               {TXT('INTRO')}
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 mb-10 md:mb-28 text-ROSE dark:text-cyan-600">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+              <a
+                href="https://github.com/jmfantin2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillGithub />
+              </a>
+              <a
+                href="https://linkedin.com/in/jmfantin"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillLinkedin />
+              </a>
             </div>
             <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent to-ROSE dark:from-transparent dark:to-cyan-700 w-48 h-48 relative overflow-y-hidden md:h-96 md:w-96">
               <Image alt="" src={alchemist} layout="fill" objectFit="cover" />
@@ -145,7 +147,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10  bg-white flex-1">
               <FrameworkIcon level="murro" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 <mark className="px-2 py-1 bg-gradient-to-br from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
@@ -166,7 +168,7 @@ export default function Home() {
                 IA
               </p>
             </div>
-            <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10 bg-white flex-1">
               <FrameworkIcon level="martelo" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 <mark className="px-2 py-1 bg-gradient-to-bl from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
@@ -187,7 +189,7 @@ export default function Home() {
                 Firebase
               </p>
             </div>
-            <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="flex flex-col items-center text-center shadow-lg px-10 py-5 rounded-xl my-10 bg-white flex-1">
               <FrameworkIcon level="marreta" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 <mark className="px-2 py-1 bg-gradient-to-tr from-ROSE to-ORANGE dark:from-CYAN dark:to-EMERALD text-white">
@@ -219,82 +221,10 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, Ive done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
-            </p>
+            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                alt=""
-                className="rounded-lg object-cover"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-                src={web1}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                alt=""
-                className="rounded-lg object-cover"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-                src={web2}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                alt=""
-                className="rounded-lg object-cover"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                alt=""
-                className="rounded-lg object-cover"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                alt=""
-                className="rounded-lg object-cover"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                alt=""
-                className="rounded-lg object-cover"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-                src={web6}
-              />
-            </div>
-          </div>
+
+          <ProjectCard />
         </section>
       </main>
     </div>
