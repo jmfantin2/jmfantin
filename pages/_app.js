@@ -1,7 +1,8 @@
-import "../styles/globals.css";
-import { useState, useEffect } from "react";
-import { FlameLoader } from "../components/FlameLoader";
-import { LangContextProvider } from "../contexts/LangContext";
+import '../styles/globals.css';
+import { useState, useEffect } from 'react';
+import { FlameLoader } from '../components/FlameLoader';
+import { LangContextProvider } from '../contexts/LangContext';
+import { ThemeContextProvider } from '../contexts/ThemeContext';
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -18,9 +19,15 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <LangContextProvider>
-      {loading ? <FlameLoader mode="fullpage" /> : <Component {...pageProps} />}
-    </LangContextProvider>
+    <ThemeContextProvider>
+      <LangContextProvider>
+        {loading ? (
+          <FlameLoader mode="fullpage" />
+        ) : (
+          <Component {...pageProps} />
+        )}
+      </LangContextProvider>
+    </ThemeContextProvider>
   );
 }
 
