@@ -113,14 +113,14 @@ export default function Home() {
                 <AiFillLinkedin />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent via-transparent to-ROSE dark:from-transparent dark:via-transparent dark:to-cyan-700 w-48 h-48 relative overflow-y-hidden md:h-96 md:w-96">
+            <div className="mb-10 md:mb-20 mx-auto bg-gradient-to-br rotate-45 from-transparent via-transparent to-ROSE dark:from-transparent dark:via-transparent dark:to-cyan-700 w-48 h-48 relative overflow-y-hidden md:h-96 md:w-96">
               <Image alt="" src={alchemist} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 mt-10 dark:text-white ">
+            <h3 className="text-3xl py-1 dark:text-white ">
               {TXT('THREE_M_P1') + ' '}
               <mark className="px-2 bg-rose-400 dark:bg-cyan-600 dark:text-white">
                 "3M"
