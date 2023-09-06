@@ -97,7 +97,7 @@ export default function Home() {
             <p className="text-md py-5 leading-tight text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               {TXT('INTRO')}
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 mb-10 md:mb-28 text-ROSE dark:text-cyan-600">
+            <div className="text-5xl flex justify-center gap-16 py-3 text-ROSE dark:text-cyan-600">
               <a
                 href="https://github.com/jmfantin2"
                 target="_blank"
@@ -113,7 +113,7 @@ export default function Home() {
                 <AiFillLinkedin />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent to-ROSE dark:from-transparent dark:to-cyan-700 w-48 h-48 relative overflow-y-hidden md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-br rotate-45 from-transparent via-transparent to-ROSE dark:from-transparent dark:via-transparent dark:to-cyan-700 w-48 h-48 relative overflow-y-hidden md:h-96 md:w-96">
               <Image alt="" src={alchemist} layout="fill" objectFit="cover" />
             </div>
           </div>
