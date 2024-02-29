@@ -20,22 +20,22 @@ export function SuperlibParallax() {
         </h2>
       </ParallaxLayer>
       <ParallaxLayer offset={3}>
-        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-base py-2 px-10 opacity-10">
+        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-sm py-2 px-10 opacity-10">
           {TXT('PARALLAX4')}
         </h2>
-        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-lg py-2 px-10 opacity-20">
+        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-base py-2 px-10 opacity-20">
           {TXT('PARALLAX4')}
         </h2>
-        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-xl py-2 px-10 opacity-40">
+        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-lg py-2 px-10 opacity-40">
           {TXT('PARALLAX4')}
         </h2>
-        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-2xl py-2 px-10 opacity-60">
+        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-xl py-2 px-10 opacity-60">
           {TXT('PARALLAX4')}
         </h2>
-        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-3xl py-2 px-10 opacity-80">
+        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-2xl py-2 px-10 opacity-80">
           {TXT('PARALLAX4')}
         </h2>
-        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-4xl py-2 px-10">
+        <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-3xl py-2 px-10">
           {TXT('PARALLAX4')}
         </h2>
         <a
