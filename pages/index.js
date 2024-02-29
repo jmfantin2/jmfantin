@@ -11,6 +11,7 @@ import { Bored } from '../components/Bored';
 import { ProjectCard } from '../components/ProjectCard';
 import { useLang } from '../contexts/LangContext';
 import { useTheme } from '../contexts/ThemeContext';
+import { SuperlibParallax } from '../components/SuperlibParallax';
 
 import TXT from '../lib/strings/constants';
 
@@ -219,6 +220,10 @@ export default function Home() {
             Initials are lost in translation though. ¯\_(ツ)_/¯
           </p>
         </section>
+        <section className="flex h-[100vh] w-auto px-48 text-center justify-center font-burtons">
+          <SuperlibParallax />
+        </section>
+
         <section className="py-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
