@@ -9,12 +9,12 @@ export function SuperlibParallax() {
           {TXT('PARALLAX1')}
         </h2>
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={2}>
+      <ParallaxLayer offset={1}>
         <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-4xl py-2  md:text-5xl px-10">
           {TXT('PARALLAX2')}
         </h2>
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={2}>
+      <ParallaxLayer offset={2}>
         <h2 className="leading-tight text-transparent bg-clip-text bg-gradient-to-b from-ORANGE to-ROSE dark:from-EMERALD dark:to-CYAN font-poppins font-bold text-4xl py-2  md:text-5xl px-10">
           {TXT('PARALLAX3')}
         </h2>
